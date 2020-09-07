@@ -504,7 +504,7 @@ footer .landing-row-group
     }
     .block-upper
     {
-        top:-189px;
+        top:-175px;
         max-height: 238px;
         padding-bottom: 40px;
     }
@@ -613,7 +613,7 @@ footer .landing-row-group
     .white-block h3
     {
         font-size: 20px;
-        margin-bottom: 24px;
+        margin-bottom: 0px;
     }
     .white-block p
     {
@@ -675,7 +675,7 @@ footer .landing-row-group
     {
         width: 100%;
         margin: 0 auto 22px;
-        padding: 24px;
+        padding: 24px 24px 40px;
     }
     .landing-row-3 .white-block span
     {
@@ -684,6 +684,7 @@ footer .landing-row-group
     .landing-row-3 .white-block h3
     {
         font-size: 32px;
+        margin:
     }
     .landing-row-3 .white-block a
     {
