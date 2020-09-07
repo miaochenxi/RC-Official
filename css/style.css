@@ -243,7 +243,7 @@ body
     color: #414141;
     text-decoration: none;
 }
-.white-block a:hover
+.white-block>a:hover
 {
     color: #a3a3a3;
 }
@@ -615,7 +615,7 @@ footer .landing-row-group
         font-size: 14px;
         line-height: 23px;
     }
-    .white-block a
+    .white-block>a
     {
         position:absolute;
         bottom: 10px;
@@ -680,7 +680,7 @@ footer .landing-row-group
     {
         font-size: 32px;
     }
-    .landing-row-3 .white-block a
+    .landing-row-3 .white-block>a
     {
         font-size: 14px;
     }
