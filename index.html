@@ -26,7 +26,7 @@
             <a class="nav" href="#">师资力量</a>
             <a class="nav" href="#">技术</a>
             <a class="nav" href="#">支持</a>
-            <a class="nav" href="#">学习环境</a>
+            <a class="nav" href="#EnvPic">学习环境</a>
             <a class="nav" target="_blank" href="http://acm.zzuli.edu.cn/">ZZULIOJ</a>
         </nav>
     </div>
@@ -42,21 +42,22 @@
                 郑州轻工业大学的<strong>校级实验室</strong>。软创实验室具有专业的教师团队、卓越的学习环境、一流的开发团队、全面的学习资料等等，对于学生的个人发展和未来规划影响极大，是每届软件学院的学生优先竞争的环境。
             </p>
             <br>
-            <button type="button" id="btn-1" class="btn" data-toggle="modal" data-target="#QRcode">扫码加入</button>
-            <button id="btn-2" class="btn" data-toggle="modal" data-target="#QRcode">扫码加入</button>
+            <button type="button" id="btn-1" class="btn" data-toggle="modal" data-target="#QRcode"
+                onclick="replaceQR()">扫码加入</button>
+            <button id="hidbtn" data-toggle="modal" hidden data-target="#QRcode"></button>
             <!-- Modal -->
             <div class="modal fade" id="QRcode" tabindex="-1" role="dialog" aria-labelledby="QRcodeTitle"
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="QRcodeTitle">扫码加群</h5>
+                            <h5 class="modal-title" id="QRcodeTitle">查看</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <img src="./img/rczx.jpg">
+                        <div id="replace-Content" class="modal-body d-flex justify-content-center">
+                            <img src="./img/rczx.jpg" height="auto" width="100%">
                         </div>
                     </div>
                 </div>
@@ -65,7 +66,6 @@
         <div>
             <div><img src="./img/rc.jpg" alt=""></div>
         </div>
-
     </div>
     <div style="clear:both;"></div>
     <div class="line">
@@ -100,14 +100,59 @@
     <div id="blank"></div>
     <div class="landing-row">
         <h3 class="header-2">实验室的环境</h3>
-        <p>优秀老师的指导，优秀学长学姐们的答疑解惑，也有丰富的学习书籍可供查阅</p>
+        <p id="EnvPic">优秀老师的指导，优秀学长学姐们的答疑解惑，也有丰富的学习书籍可供查阅</p>
     </div>
     <div class="line-grey">
         <div class="white-block">
             <img src="./img/studio.png" height="50" alt="">
             <h3>硬件杠杠的</h3>
             <p>良好的学习环境，电脑、门禁、空调、暖气、饮水机、投影仪、展示台、扫描仪、打印机等，干净卫生而且安静的环境</p>
-            <a href="#">加入</a>
+            <a href="#" data-toggle="modal" data-target="#ENV">查看图片</a>
+            <div class="modal fade" id="ENV" tabindex="-1" role="dialog" aria-labelledby="ENVTitle" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ENVTitle">查看</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel" data-slide-to="1"></li>
+                                    <li data-target="#carousel" data-slide-to="2"></li>
+                                    <li data-target="#carousel" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/personal.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/bookshelf.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/line.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/kt.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="white-block">
             <img src="./img/ban.png" height="50" alt="">
@@ -189,15 +234,15 @@
         <div class="landing-row-group">
             <div class="footer-media-link">
                 <a><img src="./img/logo-wechat.png" alt=""><br>微信</a>
-                <p>在微信上关注“?????”</p>
+                <p>暂无微信公众号</p>
             </div>
             <div class="footer-media-link">
                 <a><img src="./img/logo-twitter.svg" alt=""><br>Twitter</a>
-                <p>在 Twitter 上关注 @?????</p>
+                <p>暂无Twitter账号</p>
             </div>
             <div class="footer-media-link">
                 <a><img src="./img/youtube_48dp.png" alt=""><br>YouTube</a>
-                <p>在 YouTube 上访问“?????”频道</p>
+                <p>暂无Youtube频道</p>
             </div>
         </div>
         <hr style="border-color: transparent transparent lightgray transparent">
