@@ -723,4 +723,34 @@ footer .landing-row-group
         padding: 0 20px;
         width: 100%;
     }
+    /*手机端导航栏*/
+    .mobile-nav
+    {
+        position: fixed;
+        height: 100%;
+        width: 65%;
+        background-color: #FFFFFF;
+        z-index: 4;
+    }
+    .mobile-nav ul
+    {
+        display: flex;
+        padding:0;
+        flex-wrap: wrap;
+    }
+    .mobile-nav li
+    {
+        padding: 16px 8px 15px 24px;
+        text-align: left;
+        list-style: none;
+        width: 100%;
+        border-bottom: #eaeaea solid 1px;
+    }
+    .mobile-nav a
+    {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
+        color: #5f6368;
+    }
 }
