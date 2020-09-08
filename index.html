@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="icon" type="image/ico" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
     <title>软创实验室</title>
 </head>
 
@@ -30,15 +31,20 @@
             <a class="nav" target="_blank" href="http://acm.zzuli.edu.cn/">ZZULIOJ</a>
         </nav>
     </div>
-    <div class="mobile-nav">
-        <ul>
+    <div id="sitemask" class="sitemask"></div>
+    <div id="mobile" class="mobile-nav">
+        <ul id="mobileul">
+            <li><a><img id="logo" src="./img/hua.png" alt="logo">
+                    <span
+                        style="font-size: 18px;float: left;margin-top: 0.7em;font-weight: bold;margin-right: 20px;color: black">软创实验室</span></a>
+            </li>
             <li><a href="#">平台</a></li>
             <li><a href="#">学习氛围</a></li>
             <li><a href="#">师资力量</a></li>
             <li><a href="#">技术</a></li>
             <li><a href="#">支持</a></li>
-            <li><a href="#">学习环境</a></li>
-            <li><a href="#">ZZULIOJ</a></li>
+            <li><a href="#EnvPic">学习环境</a></li>
+            <li><a target="_blank" href="http://acm.zzuli.edu.cn/">ZZULIOJ</a></li>
         </ul>
     </div>
     <div class="block-upper">
@@ -284,6 +290,7 @@
     <script src="./js/jquery.slim.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/func.js"></script>
 </body>
 
 </html>
