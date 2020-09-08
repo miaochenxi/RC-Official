@@ -448,6 +448,10 @@ footer .landing-row-group
 {
     justify-content: left;
 }
+
+#mobile {display: none;}
+
+/* 移动端适配 */
 @media screen and (min-width: 600px)
 {
     #menu-btn
@@ -724,6 +728,7 @@ footer .landing-row-group
         width: 100%;
     }
     /*手机端导航栏*/
+    #mobile {display: inherit;}
     .mobile-nav
     {
         position: fixed;
