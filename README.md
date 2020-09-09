@@ -1,8 +1,8 @@
 # RC-Official
 
-<div style="text-align:center;width: 100%;"><img src="./img/logo.jpg" height="300" width="300"></div>
+<div style="width: 100%;display: flex;justify-content: center;"><img src="./img/logo.jpg" height="300" width="300"></div>
 
-### <div style="text-align:center;width:100%;">**软床摸鱼官方网站**</div>
+### <p align="center">软床摸鱼官方网站</p>
 
 为了起到更好的宣传效果,软创实验室网站上线了,欢迎(~~恳求~~)各位对它进行完善和提升。
 
