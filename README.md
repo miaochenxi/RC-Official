@@ -1,14 +1,13 @@
 # RC-Official
 
-<center><img src="./img/logo.jpg" height="300"></center>
+<div style="text-align:center"><img src="./img/logo.jpg" height="300" width="300"></div>
 
-### <center>**软床摸鱼官方网站**</center>
+### <div style="text-align:center">**软床摸鱼官方网站**</div>
 
 为了起到更好的宣传效果,软创实验室网站上线了,欢迎(~~恳求~~)各位对它进行完善和提升。
 
 ## **如何参与**
 
----
 
 fork本项目到自己的代码库，然后在自己的的仓库中写代码。让我们一起来开发，以下有一些需要注意的地方:
 
@@ -30,17 +29,11 @@ RC-OFFICIAL
 
 应该还有bug，还有不足之处，还有很多需要完善的地方，求各位来完善完善、扩展扩展这个网站，拓展一些功能，加入一些新的东西...
 
-<br/>
-
 完成以后发起 `pull request`，等待审核合并。
-
----
 
 ## **Licence**
 
 MIT
-
----
 
 ## **Author**
 
