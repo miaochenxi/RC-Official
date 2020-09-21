@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+
+    <title>图片展示</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="div-column">
+            <img src="./img/personal.jpg" class="img-thumbnail" alt="..."><br>
+            <img src="./img/meeting1.jpg" class="img-thumbnail" alt="..."><br>
+            <img src="./img/entry.jpg" class="img-thumbnail" alt="...">
+        </div>
+        <div class="div-column">
+            <img src="./img/bookshelf.jpg" class="img-thumbnail" alt="..."><br>
+            <img src="./img/line.jpg" class="img-thumbnail" alt="...">
+        </div>
+
+        <div class="div-column">
+            <img src="./img/kt.jpg" class="img-thumbnail" alt="..."><br>
+            <img src="./img/class1.jpg" class="img-thumbnail" alt="...">
+        </div>
+    </div>
+    <style>
+        body {
+            background-color: #121212;
+            box-sizing: border-box;
+        }
+
+        .div-column {
+            float: left;
+            width: 33%;
+            height: auto;
+        }
+
+        .div-column>img {
+            height: auto;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .div-column {
+                float: none;
+                width: 100%;
+                height: auto;
+            }
+
+            .div-column>img {
+                height: auto;
+                min-width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
